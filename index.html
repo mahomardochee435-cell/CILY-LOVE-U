@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pour Toi</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f0f0f,#1f1f1f);
+    font-family:Arial, sans-serif;
+    color:white;
+    overflow:hidden;
+}
+.container{
+    width:90%;
+    max-width:800px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    padding:50px;
+    text-align:center;
+    animation:fade 2s ease;
+}
+h1{
+    font-size:55px;
+    margin-bottom:25px;
+}
+.line{
+    width:120px;
+    height:4px;
+    background:white;
+    margin:0 auto 30px;
+    border-radius:10px;
+}
+p{
+    font-size:20px;
+    line-height:1.9;
+    color:#e5e5e5;
+}
+button{
+    margin-top:35px;
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    transform:scale(1.05);
+}
+.message{
+    display:none;
+    margin-top:30px;
+    font-size:22px;
+    color:white;
+}
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Si tu lis ça...</h1>
+    <div class="line"></div>
+    <p>
+        Je sais qu’entre nous il y a eu des erreurs,
+        des moments compliqués et sûrement des choses
+        qui t’ont blessée, et honnêtement je suis désolé.
+        <br><br>
+        Avec le temps je me suis rendu compte
+        de beaucoup de choses, surtout de la place
+        que tu avais dans ma vie.
+        <br><br>
+        Malgré tout ce qui s’est passé,
+        mes sentiments pour toi n’ont jamais disparu.
+        <br><br>
+        Je ne veux pas te forcer,
+        je voulais juste être honnête avec toi.
+        <br><br>
+        Et si au fond de toi il reste encore
+        un peu d’amour pour moi,
+        alors j’aimerais qu’on essaie encore une fois.
+    </p>
+    <button onclick="showMessage()">
+        Clique ici
+    </button>
+    <div class="message" id="finalMessage">
+        Peu importe ta réponse… je t’aimerai toujours ❤️
+    </div>
+</div>
+<script>
+function showMessage(){
+    document.getElementById("finalMessage").style.display = "block";
+}
+</script>
+</body>
+</html>
+    
+  </body>
+  
+</html>
